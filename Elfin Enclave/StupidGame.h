@@ -8,6 +8,7 @@ public:
 	void PrintIntro();
 	void Start();
 	void Update();
+	void ParseInput();
 	void Draw();
 	void GameEnd();
 	bool IsGameOver();

@@ -124,6 +124,8 @@
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneNode.cpp" />
     <ClCompile Include="Snake.cpp" />
+    <ClCompile Include="sqlite3\shell.c" />
+    <ClCompile Include="sqlite3\sqlite3.c" />
     <ClCompile Include="StupidGame.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +138,8 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneNode.h" />
     <ClInclude Include="Snake.h" />
+    <ClInclude Include="sqlite3\sqlite3.h" />
+    <ClInclude Include="sqlite3\sqlite3ext.h" />
     <ClInclude Include="StupidGame.h" />
   </ItemGroup>
   <ItemGroup>

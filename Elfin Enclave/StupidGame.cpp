@@ -69,6 +69,23 @@ void StupidGame::Draw()
 	std::cout << "(x:" << player_pos.x << ",y:" << player_pos.y << ")" << std::endl;
 }
 
+void StupidGame::ParseInput()
+{
+	std::string mystr;
+	std::cout << "Write command" << std::endl;
+	std::getline(std::cin, mystr);
+
+	if (mystr == "quit")
+	{
+		std::cout << "close the game" << std::endl;
+		this->GameEnd();
+	}
+	else
+	{
+		std::cout << "wrong command" << std::endl;
+	}
+}
+
 void StupidGame::Update()
 {
 	//Get the input
@@ -105,6 +122,7 @@ void StupidGame::Update()
 void StupidGame::GameEnd()
 {
 	//std::cout << "Game Over" << std::endl;
+	_bGameOver = true;
 };
 
 bool StupidGame::IsGameOver()
